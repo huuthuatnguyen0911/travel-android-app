@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarqlsanpham"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0ED800"
+        app:title="Sửa thông tin sản phẩm"
+        app:titleTextColor="#f9f6f5"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CẬP NHẬT SẢN PHẨM"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:id="@+id/edt_suatensanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:hint="Nhập tên sản phẩm"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edt_suagia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:hint="Nhập giá"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_suaimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:hint="Nhập link hình ảnh sản phẩm" />
+
+        <EditText
+            android:id="@+id/edt_suamota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:hint="Nhập mô tả sản phẩm"
+            android:lines="1"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edt_suaidloaisanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:digits="123"
+            android:hint="Nhập ID loại sản phẩm(1 or 2 or 3)"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_suacapnhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="#38EC06"
+                android:text="Cập nhật"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_suaback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="#FB3131"
+                android:text="trở về"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

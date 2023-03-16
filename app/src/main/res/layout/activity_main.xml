@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_manhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="#0ED800"
+                android:title="Trang Chính">
+
+            </android.support.v7.widget.Toolbar>
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D6D6D6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="401dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="100dp"
+                    android:text="CÁC TOUR MỚI NHẤT"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="#FFC61A"/>
+
+                <SearchView
+                    android:id="@+id/searchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@android:color/white"
+                    android:gravity="start"
+                    android:paddingLeft="0dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DAEFEFEF">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_manhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></ListView>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="Log Out"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="end|bottom"/>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:paddingLeft="7dp"
+    android:paddingTop="7dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="7dp"
+    android:background="@drawable/border">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        android:paddingRight="50dp"
+        app:cardCornerRadius="18dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/newico" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_sanpham"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_tensanpham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="san pham"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_giasanpham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gia"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
